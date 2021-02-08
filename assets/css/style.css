@@ -143,6 +143,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   margin-top: 35px;
+  background-color: #040404;
+
 }
 
 .nav-menu ul {
@@ -854,6 +856,7 @@ section .container {
 .portfolio-details .container {
   padding-top: 20px;
   padding-bottom: 40px;
+  background-color: #040404;
 }
 
 .portfolio-details .portfolio-title {
