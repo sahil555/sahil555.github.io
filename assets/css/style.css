@@ -1001,4 +1001,375 @@ section .container {
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# MODERN THEME ENHANCEMENTS
+--------------------------------------------------------------*/
+
+/* Color Scheme: Modern Dark with Vibrant Green & Purple Accents */
+:root {
+  --primary-color: #18d26e;
+  --primary-light: #35e888;
+  --primary-dark: #15bb62;
+  --secondary-color: #6c5ce7;
+  --accent-purple: #a29bfe;
+  --dark-bg: #0f0f0f;
+  --card-bg: rgba(20, 20, 30, 0.8);
+  --border-color: rgba(24, 210, 110, 0.2);
+}
+
+/* Enhanced Header with Gradient */
+#header {
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.95) 0%, rgba(20, 20, 40, 0.9) 100%);
+}
+
+/* Gradient Text Effect for Main Title */
+#header h1 {
+  background: linear-gradient(135deg, #18d26e 0%, #35e888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#header h1 a {
+  background: linear-gradient(135deg, #18d26e 0%, #35e888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Improved Section Container */
+section .container {
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.9) 0%, rgba(20, 20, 40, 0.85) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(24, 210, 110, 0.1);
+}
+
+/* Section Title Gradient */
+.section-title h2::after {
+  background: linear-gradient(90deg, #18d26e, #6c5ce7);
+}
+
+.section-title p {
+  background: linear-gradient(135deg, #18d26e 0%, #a29bfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*--------------------------------------------------------------
+# PROJECT CARDS (NEW)
+--------------------------------------------------------------*/
+.projects .project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #18d26e, #6c5ce7, #18d26e);
+  transition: left 0.35s ease;
+}
+
+.projects .project-card:hover {
+  border-color: rgba(24, 210, 110, 0.5);
+  box-shadow: 0 12px 40px rgba(24, 210, 110, 0.2);
+  transform: translateY(-4px);
+}
+
+.projects .project-card:hover::before {
+  left: 100%;
+}
+
+.projects .project-card h4 {
+  color: #18d26e;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.projects .project-card .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.projects .project-card .tech-tags span {
+  display: inline-block;
+  background: rgba(24, 210, 110, 0.15);
+  color: #18d26e;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 1px solid rgba(24, 210, 110, 0.3);
+}
+
+.projects .project-card a.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #18d26e, #35e888);
+  color: #041012;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.projects .project-card a.project-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(24, 210, 110, 0.3);
+}
+
+/*--------------------------------------------------------------
+# FEATURE CARDS (NEW)
+--------------------------------------------------------------*/
+.features {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.features:hover {
+  border-color: rgba(24, 210, 110, 0.5);
+  box-shadow: 0 12px 40px rgba(24, 210, 110, 0.2);
+}
+
+.features .feature-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #18d26e, #6c5ce7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.features h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.features p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/*--------------------------------------------------------------
+# Enhanced Button Styles
+--------------------------------------------------------------*/
+.btn-primary, .btn-outline-primary {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #18d26e, #35e888);
+  color: #041012;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(24, 210, 110, 0.3);
+  color: #041012;
+}
+
+.btn-outline-primary {
+  border: 2px solid #18d26e;
+  color: #18d26e;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(90deg, #18d26e, #35e888);
+  color: #041012;
+  border-color: #35e888;
+  transform: translateY(-2px);
+}
+
+/*--------------------------------------------------------------
+# Enhanced Skills Cards
+--------------------------------------------------------------*/
+.skills .progress {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid rgba(24, 210, 110, 0.1);
+}
+
+.skills .progress-bar {
+  background: linear-gradient(90deg, #18d26e, #6c5ce7);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(24, 210, 110, 0.2);
+}
+
+.skills .skill {
+  background: linear-gradient(135deg, #18d26e 0%, #a29bfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/*--------------------------------------------------------------
+# Enhanced Interests/Icon Boxes
+--------------------------------------------------------------*/
+.interests .icon-box {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.interests .icon-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #18d26e, #6c5ce7);
+  border-radius: 10px 10px 0 0;
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+  transform-origin: left;
+}
+
+.interests .icon-box:hover {
+  border-color: rgba(24, 210, 110, 0.5);
+  box-shadow: 0 12px 40px rgba(24, 210, 110, 0.2);
+  transform: translateY(-4px);
+}
+
+.interests .icon-box:hover::after {
+  transform: scaleX(1);
+}
+
+.interests .icon-box i {
+  background: linear-gradient(135deg, #18d26e, #6c5ce7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 36px;
+}
+
+.interests .icon-box h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Enhanced Certifications
+--------------------------------------------------------------*/
+.certifications .icon-box {
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  transition: all 0.35s ease;
+}
+
+.certifications .icon-box:hover {
+  border-color: #18d26e;
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.1), rgba(108, 92, 231, 0.1));
+  box-shadow: 0 12px 40px rgba(24, 210, 110, 0.25);
+}
+
+.certifications .icon-box .icon {
+  background: linear-gradient(135deg, #18d26e, #6c5ce7);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.2);
+}
+
+/*--------------------------------------------------------------
+# CTA Section (NEW)
+--------------------------------------------------------------*/
+.cta-section {
+  background: linear-gradient(135deg, rgba(24, 210, 110, 0.15) 0%, rgba(108, 92, 231, 0.15) 100%);
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta-section h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.cta-section .cta-button {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #18d26e, #35e888);
+  color: #041012;
+  border-radius: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+.cta-section .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(24, 210, 110, 0.3);
+}
+
+/*--------------------------------------------------------------
+# Responsive Enhancements
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  section .container {
+    padding: 25px;
+  }
+
+  .projects .project-card {
+    padding: 20px;
+  }
+
+  .features {
+    padding: 20px;
+  }
+
+  .cta-section {
+    padding: 25px 15px;
+  }
+
+  .cta-section h3 {
+    font-size: 18px;
+  }
+}
+
 
