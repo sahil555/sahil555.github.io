@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-  font-size: 48px;
+  font-size: 72px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -80,9 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h2 {
-  font-size: 24px;
-  margin-top: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 28px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.95);
 }
 
 #header h2 span {
@@ -121,11 +121,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #header h1 {
-    font-size: 36px;
+    font-size: 42px;
   }
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 26px;
   }
   #header .social-links {
     margin-top: 15px;
@@ -135,6 +135,61 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Hero enhancements: center and make CTA prominent */
+#header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(4,4,4,0.6) 0%, rgba(4,4,4,0.4) 60%, rgba(4,4,4,0.6) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#header > .container > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Resume CTA */
+.resume-download {
+  display: inline-block;
+  padding: 12px 22px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #18d26e, #36e88b);
+  color: #041012;
+  border-radius: 40px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(24, 210, 110, 0.18);
+  text-decoration: none !important;
+}
+.resume-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(24, 210, 110, 0.22);
+}
+
+/* Slightly more airy sections for readability */
+section .container {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 40px;
+  border-radius: 6px;
+}
+
+/* Make section headings pop */
+.section-title p {
+  font-size: 40px;
+  letter-spacing: 3px;
 }
 
 /*--------------------------------------------------------------
