@@ -1,7 +1,7 @@
 export const experience = [
     {
         company: "HandShake AI",
-        role: "SDE – AI Implementation",
+        role: "AI Implementation Engineer",
         period: "Mar 2026 – Present",
         location: "Bengaluru",
         type: "Current",

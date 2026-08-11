@@ -23,7 +23,7 @@ export default function Contact() {
                     </a>
 
                     <a
-                        href="https://github.com/sahil555"
+                        href="https://www.github.com/sahil555"
                         target="_blank"
                         rel="noreferrer"
                         className="button secondary"
@@ -32,7 +32,7 @@ export default function Contact() {
                     </a>
 
                     <a
-                        href="https://www.linkedin.com/"
+                        href="https://www.linkedin.com/in/sahil-kureel-40abb3116/"
                         target="_blank"
                         rel="noreferrer"
                         className="button secondary"

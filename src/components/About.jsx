@@ -4,11 +4,14 @@ export default function About() {
             <div className="section-container about-grid">
                 <div>
                     <p className="eyebrow">ABOUT ME</p>
-
                     <h2>
                         Backend engineering with a
                         <span> systems mindset.</span>
                     </h2>
+                </div>
+                
+                <div className="profile-image-container">
+                    <img src="/assets/picture_profile.jpg" alt="Profile - Sahil" />
                 </div>
 
                 <div className="about-copy">
@@ -40,6 +43,8 @@ export default function About() {
                         fault tolerance, performance and system design.
                     </p>
                 </div>
+
+                
             </div>
         </section>
     );

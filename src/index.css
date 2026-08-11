@@ -282,6 +282,16 @@ a {
     color: var(--muted);
     font-size: 1.05rem;
 }
+/* 
+need to add a profile image in the about section, so added a container for it.
+write a css rule to center the image in the container and make it responsive.
+*/
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 .about-copy p+p {
     margin-top: 22px;
