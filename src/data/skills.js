@@ -96,5 +96,19 @@ export const skillGroups = [
             "Database Optimization",
             "Secure API Design"
         ]
+    },
+
+    {
+        title: "Networking & Security",
+        items: [
+            "TCP/IP",
+            "HTTP/HTTPS",
+            "SSL/TLS",
+            "OAuth 2.0",
+            "JWT",
+            "API Security",
+            "Network Protocols",
+            "Firewall Configuration"
+        ]
     }
 ];
