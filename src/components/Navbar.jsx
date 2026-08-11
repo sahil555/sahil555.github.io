@@ -40,7 +40,7 @@ export default function Navbar() {
 
                 <a
                     className="nav-resume"
-                    href="/assets/resume.pdf"
+                    href="/assets/Resume.pdf"
                     target="_blank"
                     rel="noreferrer"
                 >
